@@ -18,28 +18,31 @@
 		<hr>
 		<form   method="post" action="rss.php">
 		<div class="row">
-			<div class="col-md-3 sm-12">
+			<div class="col-md-3 sm-12" style="text-align:left; padding-left:30px;">
 				<p style="line-height:24px;"> Get Data from RSS Feed </p> 
 			</div>
 			<div class="col-md-6">
 				<input type="text" placeholder="Enter RSS Link" style="width:80%;" name="url" id="url"> 
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3" style="text-align:right; padding-right:30px;">
 				<button class="btn btn-md btn-primary" type="submit" name="submit"> Update Database</button>
 			</div>
 		</div>
 		</form>
-
 		<hr>
 		<div class="row">
-			<div class="col-md-9 sm-12">	
+			<div class="col-md-4 sm-12" style="text-align:left; padding-left:30px;">
+				<p style="line-height:24px;"> Create RSS Feed from current Data </p> 
 			</div>
-
-			<div class="col-md-3" style="text-alighn:right;">
-			<a class="btn btn-md btn-success"> Refresh </a>
+			<div class="col-md-4" style="text-align:left; ">
+			<a href="create_rss.php" class="btn btn-md btn-primary" type="button">Generate RSS </a>
+			</div>
+			<div class="col-md-4" style="text-align:right; padding-right:30px;">		
+				<a class="btn btn-md btn-success"> Refresh </a>
 			<a class="btn btn-md btn-primary" href="add_book.php"> Add New Book </a>
 			</div>
 		</div>
+		
 		<hr>
 
 		<?php
